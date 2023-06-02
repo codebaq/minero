@@ -1,0 +1,18 @@
+.side-left-nav{
+    background-color: darkgray;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    overflow: hidden;    
+    top: 0; /* Stay at the top */
+    left: 0;  
+}
+
+.header-nav{    
+    height: 15%;
+}
+
+.list-nav{    
+    height: 65%;
+    text-align: center;
+}

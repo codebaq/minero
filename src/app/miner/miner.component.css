@@ -1,0 +1,9 @@
+.list-item {
+    border-bottom: 1px solid black;
+    height: 50px;
+    padding: 5px;
+}
+.list-item-segment{
+    float: left;
+    width: 20%;
+}

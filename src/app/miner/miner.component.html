@@ -1,0 +1,21 @@
+<div class="content-app">
+
+    <div class="list-item" *ngFor="let miner of ListMiner, let i = index">
+        <div class="list-item-segment">
+            <h3>Estado</h3> 
+            <label>{{miner.estado}}</label>           
+        </div>
+        <div class="list-item-segment">
+            <h3>Nombre</h3>
+            <label>{{miner.nombre}}</label> 
+        </div>
+        <div>
+            <input [(ngModel)]="miner.cookies">
+        </div>
+        <div>
+            <button (click)="test(i)">test</button>
+        </div>
+    </div>
+    hello
+    
+</div>
