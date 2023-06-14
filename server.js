@@ -16,10 +16,26 @@ app.use(cors({
  
 const hyperfaucet = require('./backend/hyperfaucet')
 const ad2word = require('./backend/ad2word')
+const biduefaucet = require('./backend/biduefaucet')
+const lalafaucet = require('./backend/lalafaucet')
+const mydgcoin = require('./backend/mydgcoin')
+const ltcking = require('./backend/ltcking')
+const starbits = require('./backend/starbits')
+const faucetwins = require('./backend/faucetswin')
+const flashfaucet = require('./backend/flashfaucet')
+const Adrevlinks = require('./backend/Adrevlinks')
 
 app.post('/hyperfaucet', hyperfaucet.login) 
 app.post('/ad2word', ad2word.login)
+app.post('/biduefaucet', biduefaucet.login)
+app.post('/lalafaucet', lalafaucet.login)
+app.post('/mydg', mydgcoin.login)
+app.post('/ltcking', ltcking.login)
+app.post('/starbits', starbits.login)
+app.post('/faucetwins', faucetwins.login)
+app.post('/flashfaucet', flashfaucet.login)
+app.post('/adrevlinks', Adrevlinks.Adrevlinks)
 
 app.listen(port, ()=> {
     console.log('estamos ready bb')
-}) 
+})  

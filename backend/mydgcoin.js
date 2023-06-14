@@ -11,10 +11,10 @@ const login = async (req,res) => {
     const page = await browser.newPage();   
     await page.setViewport({width:1366, height:768});   
     await page.setCookie(...cookieJson);
-    await page.goto('https://ad2word.biz/auto/currency/matic')   
+    await page.goto('http://mydgcoin.online/auto/currency/doge')   
    res.status(201).send({})  
  
-} 
+}
  
 module.exports = {
     login 

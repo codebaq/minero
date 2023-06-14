@@ -21,4 +21,5 @@ export class MinerComponent implements OnInit {
     let cookieMiner = this.ListMiner[i].cookies
     this.MinerService.PlayMiner(NombreMiner, cookieMiner)
   }
-}
+} 
+ 

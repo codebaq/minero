@@ -11,7 +11,7 @@ const login = async (req,res) => {
     const page = await browser.newPage();   
     await page.setViewport({width:1366, height:768});   
     await page.setCookie(...cookieJson);
-    await page.goto('https://ad2word.biz/auto/currency/matic')   
+    await page.goto('https://starbits.site/faucet/currency/ltc')   
    res.status(201).send({})  
  
 } 
