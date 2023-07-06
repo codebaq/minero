@@ -21,5 +21,9 @@ export class MinerComponent implements OnInit {
     let cookieMiner = this.ListMiner[i].cookies
     this.MinerService.PlayMiner(NombreMiner, cookieMiner)
   }
+
+  goLink(url : string){
+    window.open(url , '_blank')
+  }
 } 
  

@@ -41,6 +41,8 @@ export class MinerService {
       this.flashfaucetMiner(cookie)
     } else if (name == 'AutoClaim - adrevlinks'){
       this.adrevlinksMiner(cookie)
+    } else if(name == 'ourcoincash'){
+      this.ourcoincashMiner(cookie)
     }
   }
 
@@ -122,4 +124,20 @@ async  adrevlinksMiner(cookie : any){
   }
     
   }
+
+  async  ourcoincashMiner(cookie : any){
+    httpOptions.body = cookie
+    let claims = 1  
+    while (claims > 0){
+     const Adrevlinks = await new Promise(async (resolve,rejects) => {
+      await this.http.post(this.Url + 'ourcoincash', httpOptions).subscribe(async (res :  any)=>{
+        claims = res['res']
+        resolve(await res['res']) 
+      })
+     })   
+      await console.log(claims)  
+      await Adrevlinks
+    }
+      
+    }
 }

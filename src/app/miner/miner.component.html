@@ -7,7 +7,7 @@
         </div>
         <div class="list-item-segment">
             <h3>Nombre</h3>
-            <label>{{miner.nombre}}</label> 
+            <label>{{miner.nombre}}</label>  <i class="material-icons" style="font-size:12px;" (click)="goLink(miner.url)">launch</i>
         </div>
         <div>
             <input [(ngModel)]="miner.cookies">
