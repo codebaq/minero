@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background-color:whitesmoke;
+    background-color:whitesmoke;        
 }
 
 blockquote, q {
@@ -48,5 +48,8 @@ table {
  margin-left: 22%;
 }
 
-
+@font-face {
+    font-family: 'Rubik';
+    src: url('./assets/Rubik-VariableFont_wght.woff');
+}
 

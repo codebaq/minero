@@ -10,9 +10,23 @@
 
 .header-nav{    
     height: 15%;
+    padding: 5px;    
+}
+
+.header-nav .Title {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Rubik';
+    margin-top: 20px;
 }
 
 .list-nav{    
     height: 65%;
-    text-align: center;
+    text-align: center;    
+}
+
+.list-nav ul li {
+    font-family: 'Rubik';
+    padding: 15px;
 }

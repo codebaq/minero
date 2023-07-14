@@ -15,7 +15,7 @@ export class MinerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  test(i : any){
+  StartMiner(i : any){
     //this.miner.BtcBunchLogin()
     let NombreMiner = this.ListMiner[i].nombre
     let cookieMiner = this.ListMiner[i].cookies

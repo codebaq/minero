@@ -1,4 +1,4 @@
-<div class="content-app">
+<div class="content-app">    
 
     <div class="list-item" *ngFor="let miner of ListMiner, let i = index">
         <div class="list-item-segment">
@@ -7,15 +7,18 @@
         </div>
         <div class="list-item-segment">
             <h3>Nombre</h3>
-            <label>{{miner.nombre}}</label>  <i class="material-icons" style="font-size:12px;" (click)="goLink(miner.url)">launch</i>
+            <label>{{miner.nombre}}</label><span class="material-symbols-outlined" style="font-size:20px;" (click)="goLink(miner.url)">link </span>
         </div>
-        <div>
-            <input [(ngModel)]="miner.cookies">
+        <div class="list-item-segment">
+            <div class="field">
+                <input class="list-item-input" [(ngModel)]="miner.cookies" placeholder="importe su cookie">
+                <div class="line"></div>
+            </div>            
         </div>
-        <div>
-            <button (click)="test(i)">test</button> 
+        <div class="list-item-segment">
+            <button (click)="StartMiner(i)"> <i class="material-symbols-outlined">play_arrow</i>Iniciar</button> 
         </div>
-    </div>
-    hello
+    </div>    
     
 </div>
+

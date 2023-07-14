@@ -26,7 +26,7 @@ const Adrevlinks = async (req,res) => {
       RestClaim = await parseInt(RestClaim - 1)  
       await page.waitForTimeout(1000)
       await browser.close() 
-      await page.waitForTimeout(1000)
+     // await page.waitForTimeout(1000)
       await res.status(201).send({res : RestClaim})                 
     }, 15000);
      
